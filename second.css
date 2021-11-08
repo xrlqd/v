@@ -1,0 +1,59 @@
+.two {
+	background: lightslategray;
+}
+
+.head {
+	color: black;
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+
+.block {
+	width: 200px;
+	height: 200px;
+	background: green;
+	border-radius: 0px;
+	margin: 60px;
+	font-size: 20px;
+	transition: 1s;
+	animation: bob 4s ease infinite;
+}
+
+.nhead {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+}
+
+.block img {
+	border-radius: 0px;
+}
+
+.block span {
+	color: darkgrey;
+	display: flex;
+	align-items: flex-end;
+}
+
+.block:hover {
+	transform: scale(1.1);
+	animation: bob 0s ease none;
+}
+
+@keyframes bob {
+	0% {
+
+	}
+	33% {
+		background: lime;
+	}
+	66% {
+		background: lightblue;
+	}
+	100% {
+		background: green;
+	}
+}
